@@ -1,6 +1,6 @@
 exports.render = function(req, res){
     //res.status(200).send('Hello world');
-
+    /*
     if(req.session.lastVisit){
         console.log(req.session.lastVisit);
     }
@@ -9,5 +9,11 @@ exports.render = function(req, res){
 
     res.render('index', {
         title:'Hello world'
+    });
+    */
+
+    res.render('index', {
+        title:'Hello world',
+        userFullName:req.user? req.user.fullName:''
     });
 };

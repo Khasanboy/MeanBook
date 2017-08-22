@@ -9,12 +9,15 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "compression": "^1.7.0",
+    "connect-flash": "*",
     "ejs": "^2.5.7",
     "express": "*",
     "express-session": "^1.15.5",
     "method-override": "^2.3.9",
+    "mongoose": "*",
     "morgan": "^1.8.2",
-    "mongoose": "*"
+    "passport": "^0.4.0",
+    "passport-local": "*"
   },
   "author": "",
   "license": "ISC"
