@@ -113,7 +113,7 @@ UserSchema.statics.findUniqueUsername = function (username, suffix, callback) {
     })
 }
 
-/*
+
 //Setter
 UserSchema.virtual('fullName').set(function (fullName) {
     const splitName = fullName.split(' ');
@@ -127,6 +127,6 @@ UserSchema.virtual('fullName').get(function () {
     return this.firstName + ' ' + this.lastName;
 })
 
-*/
+
 UserSchema.set('toJSON', { getters: true, virtuals: true });
 mongoose.model('User', UserSchema);
